@@ -1,15 +1,15 @@
-# StockSynapse MCP Server
+# Stock Analyzer MCP
 
 [![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-v1.0-orange.svg)](https://spec.modelcontextprotocol.io/)
 [![Code Quality](https://img.shields.io/badge/Code%20Quality-Production%20Ready-brightgreen.svg)](#)
 [![Financial Data](https://img.shields.io/badge/Data%20Source-Yahoo%20Finance-blue.svg)](https://finance.yahoo.com/)
-[![AI Integration](https://img.shields.io/badge/AI-Gemini%20%7C%20Claude-purple.svg)](#)
+[![AI Integration](https://img.shields.io/badge/AI-Groq%20%7C%20Claude-purple.svg)](#)
 
-> **Enterprise-grade Model Context Protocol server that transforms AI assistants into powerful financial analysts with real-time market intelligence.**
+> **Production-grade Model Context Protocol server that enables AI assistants to access real-time financial market data with intelligent fallback mechanisms.**
 
-StockSynapse bridges the gap between cutting-edge AI models (Gemini, Claude) and live financial markets through the MCP protocol standard. Built with production-grade reliability featuring intelligent fallback mechanisms, comprehensive error handling, and sub-second response times. Demonstrates advanced async programming patterns, protocol standardization, and scalable architecture design—perfect for showcasing modern AI integration capabilities.
+Stock Analyzer MCP bridges cutting-edge AI models (Groq, Claude) with live financial markets through the MCP protocol standard. Built with production-grade reliability featuring intelligent fallback mechanisms, comprehensive error handling, and sub-second response times. Demonstrates advanced async programming patterns, protocol standardization, and scalable architecture design—perfect for showcasing modern AI integration capabilities.
 
 ## System Architecture
 
@@ -149,14 +149,14 @@ Output: Market Summary
 
 ## Integration Examples
 
-### With Gemini API
+### With Groq API
 
 Your mcp_client.py automatically handles this:
 
 ```bash
 python mcp_client.py
 # Type: "Compare Apple and Microsoft"
-# Gemini analyzes your query, calls the right tool, returns answer
+# Groq analyzes your query, calls the right tool, returns answer
 ```
 
 ### With Claude
@@ -294,13 +294,13 @@ Scalability: Add new tools by simply adding more functions
 - Advanced caching layer
 - Database persistence (optional)
 
-## What Makes This Impressive
+## Why This Project Stands Out
 
 **For Recruiters & Technical Evaluators:**
 
 - **Protocol Mastery**: Implements MCP v1.0 specification from scratch, demonstrating deep understanding of API design standards
 - **Production Mindset**: Complete with logging, error handling, type safety, and graceful degradation—not just a toy project
-- **AI-First Architecture**: Built for the future of AI tooling with compatibility across major AI platforms (Gemini, Claude)
+- **AI-First Architecture**: Built for the future of AI tooling with compatibility across major AI platforms (Groq, Claude)
 - **Real-World Application**: Solves actual problem (AI assistants lack real-time financial data) with elegant, scalable solution
 - **Code Quality**: Full type hints, comprehensive docstrings, clean separation of concerns, extensive documentation
 - **Reliability Engineering**: Intelligent fallback mechanism ensures 99%+ uptime even when external APIs fail
@@ -319,4 +319,4 @@ Scalability: Add new tools by simply adding more functions
 
 ---
 
-**StockSynapse** | Transforming AI Assistants into Financial Analysts | MCP Protocol v1.0
+**Stock Analyzer MCP** | Real-Time Financial Data for AI Assistants | MCP Protocol v1.0

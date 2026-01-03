@@ -320,9 +320,10 @@ def get_stock_fundamentals(symbol: str) -> str:
         if market_cap:
             market_cap_formatted = f"${market_cap/1e12:.2f}T" if market_cap >= 1e12 else f"${market_cap/1e9:.2f}B"
             result += f"Market Capitalization: {market_cap_formatted}\n"
-        if pe_ratio:
+        if pe_ratio and pe_ratio > 0 and pe_ratio < 500:
             result += f"P/E Ratio: {pe_ratio:.2f}\n"
-        if dividend_yield:
+        if dividend_yield is not None and dividend_yield > 0 and dividend_yield < 0.20:
+            # dividend_yield is in decimal form (0.0042 = 0.42%), multiply by 100 for percentage
             result += f"Dividend Yield: {dividend_yield*100:.2f}%\n"
         if week_52_low and week_52_high:
             result += f"52-Week Range: ${week_52_low:.2f} - ${week_52_high:.2f}\n"
