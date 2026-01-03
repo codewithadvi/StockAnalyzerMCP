@@ -221,15 +221,6 @@ Stock MCP/
 - google-genai==1.15.0 - Google Generative AI (Gemini)
 - python-dotenv==1.1.0 - Environment variable management
 
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| "ModuleNotFoundError" | Run: pip install -r requirements.txt |
-| "Cannot connect to server" | Ensure python mcp_server.py is running |
-| "ERROR: Could not retrieve price" | Check: 1) symbol spelling, 2) internet connection, 3) CSV fallback file |
-| "Gemini API error" | Verify GEMINI_API_KEY in .env file is correct |
-
 ## Architecture Highlights
 
 Tool Definition: Clean decorator pattern with comprehensive docstrings
@@ -254,25 +245,6 @@ Scalability: Add new tools by simply adding more functions
 - Portfolio performance tracking
 - Advanced caching layer
 - Database persistence (optional)
-
-## Why This Project Stands Out
-
-**For Recruiters & Technical Evaluators:**
-
-- **Protocol Mastery**: Implements MCP v1.0 specification from scratch, demonstrating deep understanding of API design standards
-- **Production Mindset**: Complete with logging, error handling, type safety, and graceful degradation—not just a toy project
-- **AI-First Architecture**: Built for the future of AI tooling with compatibility across major AI platforms (Groq, Claude)
-- **Real-World Application**: Solves actual problem (AI assistants lack real-time financial data) with elegant, scalable solution
-- **Code Quality**: Full type hints, comprehensive docstrings, clean separation of concerns, extensive documentation
-- **Reliability Engineering**: Intelligent fallback mechanism ensures 99%+ uptime even when external APIs fail
-
-**Technical Highlights That Stand Out:**
-- Async/await mastery for concurrent I/O operations
-- Decorator pattern for clean tool registration
-- Robust error handling at every layer
-- Professional logging and observability
-- Zero-dependency fallback system
-- Ready for production deployment
 
 ## Version
 
