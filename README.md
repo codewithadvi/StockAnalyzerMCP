@@ -16,8 +16,6 @@ Stock Analyzer MCP bridges cutting-edge AI models (Groq, Claude) with live finan
 
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1a125fab-30af-46e9-9788-2bc8ccd662ec" />
 
-```
-
 ## User Flow
 
 ```
