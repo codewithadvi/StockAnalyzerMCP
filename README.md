@@ -18,23 +18,8 @@ Stock Analyzer MCP bridges cutting-edge AI models (Groq, Claude) with live finan
 
 ## User Flow
 
-```
-User: "What's Apple's price compared to Microsoft?"
-  ↓
-Gemini/Claude: [Analyzes query and available tools]
-  ├─ Recognizes: "compare stocks" task
-  ├─ Identifies: compare_stocks(symbol1, symbol2)
-  ├─ Sets parameters: symbol1="AAPL", symbol2="MSFT"
-  ↓
-MCP Server: [Executes tool]
-  ├─ Fetches AAPL price from Yahoo Finance
-  ├─ Fetches MSFT price from Yahoo Finance
-  ├─ Calculates difference: $154.57 (46.88%)
-  ↓
-Result: "AAPL ($175.64) is 46.88% lower than MSFT ($330.21)"
-  ↓
-User: [Receives formatted answer in real-time]
-```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/cfa7214a-2546-422a-9bcf-d65bc0d1bbb4" />
+
 
 ## Features
 
