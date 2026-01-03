@@ -13,31 +13,9 @@ Stock Analyzer MCP bridges cutting-edge AI models (Groq, Claude) with live finan
 
 ## System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                       AI Assistant (Claude/Gemini)                   │
-│                                                                       │
-│         User Query → Identify Tool → Execute → Response              │
-└─────────────────────────────────────────────────────────────────────┘
-                                  ↑
-                         MCP Protocol (JSON-RPC)
-                                  ↓
-┌─────────────────────────────────────────────────────────────────────┐
-│                        MCP Server (Python)                            │
-│                                                                       │
-│  ┌──────────────────────────────────────────────────────────────┐   │
-│  │  Tool Registry                                               │   │
-│  │  - get_stock_price        - get_stock_fundamentals          │   │
-│  │  - compare_stocks         - get_market_summary              │   │
-│  └──────────────────────────────────────────────────────────────┘   │
-│                           ↓                                           │
-│  ┌──────────────────────────────────────────────────────────────┐   │
-│  │  Data Retrieval Layer                                        │   │
-│  │                                                              │   │
-│  │  Primary:  Yahoo Finance API (yfinance)                     │   │
-│  │  Fallback: Local CSV file (stocks_data.csv)                │   │
-│  └──────────────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────────────┘
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1a125fab-30af-46e9-9788-2bc8ccd662ec" />
+
 ```
 
 ## User Flow
